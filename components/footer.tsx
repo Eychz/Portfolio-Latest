@@ -78,19 +78,21 @@ export function Footer() {
             <h3 className="mb-4 text-sm font-semibold">Socials</h3>
             <div className="flex items-center gap-3">
               <Link
-                href="#"
+                href="https://www.tiktok.com/@eych.tech"
                 className="flex h-8 w-8 items-center justify-center rounded-md border border-border hover:bg-accent transition-colors"
               >
                 <TikTokIcon className="h-4 w-4" />
               </Link>
+
               <Link
-                href="#"
+                href="https://www.instagram.com/letter.eych"
                 className="flex h-8 w-8 items-center justify-center rounded-md border border-border hover:bg-accent transition-colors"
               >
                 <InstagramIcon className="h-4 w-4" />
               </Link>
+
               <Link
-                href="mailto:contact@haroldcatipay.com"
+                href="mailto:eych.xander@gmail.com"
                 className="flex h-8 w-8 items-center justify-center rounded-md border border-border hover:bg-accent transition-colors"
               >
                 <Mail className="h-4 w-4" />

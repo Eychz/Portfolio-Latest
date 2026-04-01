@@ -1,32 +1,37 @@
-import Link from "next/link";
-import { Card } from "../ui/card";
+"use client";
 
-const recentWorks = [
-  { id: 1, title: "Project 1" },
-  { id: 2, title: "Project 2" },
-  { id: 3, title: "Project 3" },
-  { id: 4, title: "Project 4" },
-];
+import { Folder } from "lucide-react";
+import recentWorks from "@/components/Files/RecentWorks";
+import { PaginatedProjectGrid } from "@/components/ui/paginated-project-grid";
+import { ProjectCardType } from "@/components/ui/project-card";
+
+const suggestedWorks = ["All", "Graphic Designs", "Jersey Mockup", "Web Development", "School Projects", "Event Production", "Film Making"];
 
 export function RecentWorkSection() {
+  const mappedProjects: ProjectCardType[] = recentWorks.map((work) => ({
+    title: work.title,
+    category: work.tags && work.tags.length > 0 ? work.tags : ["Project"],
+    description: work.description,
+    image: work.image,
+    icon: Folder,
+    link: work.link || "#",
+    slug: work.slug,
+  }));
+
   return (
-    <section className="container mx-auto px-4 py-12">
-      <div className="mb-2">
+    <section className="bg-background flex flex-col md:px-20 md:py-20 lg:px-45 lg:py-35">
+      <div className="mb-8">
         <h2 className="text-2xl md:text-3xl font-bold">Recent Work</h2>
         <p className="text-sm text-muted-foreground">
           A quick look at what I've been building lately.
         </p>
       </div>
 
-      <div className="mt-8 grid gap-4 sm:grid-cols-2">
-        {recentWorks.map((work) => (
-          <Card key={work.id} className="rounded-2xl border-2">
-            <div className="p-4">
-              <h3 className="font-bold">{work.title}</h3>
-            </div>
-          </Card>
-        ))}
-      </div>
+      <PaginatedProjectGrid
+        projects={mappedProjects}
+        categories={suggestedWorks}
+        gridClassName="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-max"
+      />
     </section>
   );
 }

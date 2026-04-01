@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Home, User, ArrowRight, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from "./ui/modeToggle";
 
 export function Header() {
   const pathname = usePathname();
@@ -52,13 +53,19 @@ export function Header() {
           })}
         </nav>
 
-        {/* Hire Me Button */}
-        <Button variant="outline" className="gap-2" asChild>
-          <Link href="mailto:contact@haroldcatipay.com">
-            <Mail className="h-4 w-4" />
-            <span className="hidden sm:inline">Hire Me</span>
-          </Link>
-        </Button>
+        <div className="gap-2 flex items-center">
+          {/* Theme Toggle */}
+          <ModeToggle />
+
+          {/* Hire Me Button */}
+          <Button variant="outline" className="gap-2" asChild>
+            <Link href="mailto:eych.xander@gmail.com" target="_blank" rel="noopener noreferrer">
+              <Mail className="h-4 w-4" />
+              <span className="hidden sm:inline">Contact Me</span>
+            </Link>
+          </Button>
+        </div>
+
       </div>
     </header>
   );

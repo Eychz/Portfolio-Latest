@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { ThemeProvider } from "@/components/theme-provider"
+
 
 const fontSans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -19,9 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={fontSans.variable}>
       <body className="antialiased font-sans">
+         <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
         <Header />
         <main>{children}</main>
         <Footer />
+          </ThemeProvider>
       </body>
     </html>
   );

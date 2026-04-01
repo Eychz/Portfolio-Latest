@@ -1,24 +1,8 @@
 import { Code2 } from "lucide-react";
 
-const techStack = [
-  { name: "React", level: 90 },
-  { name: "Next JS", level: 85 },
-  { name: "Express", level: 95 },
-  { name: "Node", level: 90 },
-  { name: "Adobe Premiere Pro", level: 80 },
-  { name: "Adobe Photoshop", level: 85 },
-  { name: "C#", level: 60 },
-  { name: "PHP", level: 75 },
-  { name: "Canva", level: 70 },
-  { name: "Javascript", level: 85 },
-  { name: "Capcut", level: 65 },
-];
+import { column1, column2, column3 } from "@/components/Files/TechStackData";
 
 export function TechStackSection() {
-  // Split into 3 columns
-  const column1 = techStack.slice(0, 4);
-  const column2 = techStack.slice(4, 8);
-  const column3 = techStack.slice(8);
 
   return (
     <section className="container mx-auto px-4 py-12">
@@ -33,16 +17,22 @@ export function TechStackSection() {
             {column.map((tech) => (
               <div
                 key={tech.name}
-                className="flex items-center gap-3 rounded-full border border-border px-4 py-2"
+                className="group flex items-center gap-3 rounded-full border border-border px-4 py-2 hover:border-primary/40 hover:bg-primary/5 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 cursor-default"
               >
-                <span className="text-sm font-medium flex-shrink-0 w-32 truncate">
+                <span className="text-sm font-medium flex-shrink-0 w-32 truncate group-hover:text-primary transition-colors duration-300">
                   {tech.name}
                 </span>
                 <div className="flex-1 h-3 rounded-full bg-muted overflow-hidden">
                   <div
-                    className="h-full rounded-full bg-foreground"
+                    className="h-full rounded-full bg-foreground group-hover:bg-primary transition-colors duration-500 ease-out"
                     style={{ width: `${tech.level}%` }}
                   />
+                </div>
+                {/* Animated Percentage Text */}
+                <div className="w-0 opacity-0 group-hover:w-8 group-hover:opacity-100 transition-all duration-500 ease-out flex items-center justify-end overflow-hidden shrink-0 z-10">
+                  <span className="text-xs font-bold text-primary tabular-nums">
+                    {tech.level}%
+                  </span>
                 </div>
               </div>
             ))}

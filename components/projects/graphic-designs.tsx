@@ -1,119 +1,53 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Search, Cpu, Shirt, Layout, Clapperboard } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-
-const categories = ["Esports", "Jersey", "Mockup", "Event", "MLBB"];
-
-const projects = [
-  {
-    icon: Shirt,
-    category: "Mockup",
-    title: "Chinese Collar Esport Jersey",
-  },
-  {
-    icon: Layout,
-    category: "PSD Layout",
-    title: "Print-ready T-shirt Design",
-  },
-  {
-    icon: Clapperboard,
-    category: "Production",
-    title: "MLBB Esport Event Production",
-  },
-  {
-    icon: Cpu,
-    category: "Production",
-    title: "Fiesta League Opening",
-  },
-];
+import { graphicDesignProjects } from "@/components/Files/ProjectData";
+import { ProjectCard } from "@/components/ui/project-card";
 
 export function GraphicDesigns() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-
-  const toggleCategory = (category: string) => {
-    setSelectedCategories((prev) =>
-      prev.includes(category)
-        ? prev.filter((c) => c !== category)
-        : [...prev, category]
-    );
-  };
+  const visibleProjects = graphicDesignProjects.slice(0, 3);
+  const stackImages = graphicDesignProjects.slice(3, 6);
+  const remainingCount = Math.max(0, graphicDesignProjects.length - 3);
 
   return (
     <section className="container mx-auto px-4 py-12">
-      <h2 className="text-2xl md:text-3xl font-bold mb-6">
-        Graphic Designs & Production
-      </h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-6">Graphic Designs</h2>
 
-      <div className="flex flex-col sm:flex-row gap-4 mb-8">
-        {/* Search */}
-        <div className="relative flex-1 max-w-sm">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-          <Input
-            placeholder="Search project..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="pl-9 rounded-full"
-          />
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 items-stretch">
+        {visibleProjects.map((project, index) => (
+          <div key={index} className="h-full">
+            <ProjectCard project={project} />
+          </div>
+        ))}
 
-        {/* Filter Tags */}
-        <div className="flex flex-wrap gap-2">
-          {categories.map((category) => (
-            <Badge
-              key={category}
-              variant={selectedCategories.includes(category) ? "default" : "outline"}
-              className="cursor-pointer rounded-full px-4 py-1"
-              onClick={() => toggleCategory(category)}
-            >
-              {category}
-            </Badge>
-          ))}
-        </div>
-      </div>
+        <Link href="/graphic-designs" className="block relative rounded-2xl border-2 border-border overflow-hidden bg-muted group cursor-pointer h-full min-h-[250px] shadow-sm hover:shadow-md transition-shadow">
+          <div className="absolute inset-0 overflow-hidden">
+            {stackImages.map((project, index) => (
+              <div
+                key={index}
+                className="absolute inset-0 border border-border bg-card shadow-2xl transition-transform duration-500"
+                style={{
+                  transform: `translateY(${index * 15}px) scale(${1 - index * 0.08})`,
+                  zIndex: 10 - index,
+                  opacity: 0.6 - (index * 0.15)
+                }}
+              >
+                {(project as any).image ? (
+                  <img
+                    src={(project as any).image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : null}
+              </div>
+            ))}
+          </div>
 
-      {/* Projects Grid */}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {projects.map((project, index) => {
-          const Icon = project.icon;
-          return (
-            <Card key={index} className="rounded-2xl border-2">
-              <CardContent className="p-4">
-                {/* Icon */}
-                <div className="aspect-square flex items-center justify-center rounded-xl border-2 border-border mb-3">
-                  <Icon className="h-12 w-12 text-muted-foreground" strokeWidth={1} />
-                </div>
-
-                {/* Category */}
-                <span className="text-xs font-medium text-muted-foreground underline">
-                  {project.category}
-                </span>
-
-                {/* Title */}
-                <h3 className="font-bold text-sm mt-1">{project.title}</h3>
-
-                {/* CTA */}
-                <Link
-                  href="#"
-                  className="mt-3 inline-flex items-center gap-1 text-xs bg-foreground text-background px-2 py-1 rounded"
-                >
-                  View Full Details
-                  <ArrowRight className="h-3 w-3" />
-                </Link>
-              </CardContent>
-            </Card>
-          );
-        })}
-      </div>
-
-      {/* Progress Bar */}
-      <div className="mt-8 h-1.5 w-full rounded-full bg-muted overflow-hidden">
-        <div className="h-full w-2/3 rounded-full bg-foreground" />
+          <div className="absolute inset-0 bg-background/80 backdrop-blur-[2px] flex flex-col items-center justify-center p-4 text-center z-20 group-hover:bg-background/60 transition-colors">
+            <span className="text-4xl md:text-3xl font-bold tracking-tighter mb-1 text-primary">+{remainingCount}</span>
+            <span className="text-sm font-semibold flex flex-col items-center justify-center gap-1 group-hover:underline">
+              View All Graphic Designs
+            </span>
+          </div>
+        </Link>
       </div>
     </section>
   );
