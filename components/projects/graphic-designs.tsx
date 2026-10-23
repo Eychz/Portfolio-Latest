@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { graphicDesignProjects } from "@/components/Files/ProjectData";
 import { ProjectCard } from "@/components/ui/project-card";
 
@@ -30,13 +31,13 @@ export function GraphicDesigns() {
                   opacity: 0.6 - (index * 0.15)
                 }}
               >
-                {(project as any).image ? (
-                  <img
-                    src={(project as any).image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
-                ) : null}
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  sizes="(min-width: 768px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover"
+                />
               </div>
             ))}
           </div>

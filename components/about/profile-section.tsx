@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { Star, ArrowRight } from "lucide-react";
+import { Star } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
+import { certificates } from "@/components/Files/CertificatesData";
+
 const studentInfo = {
   studentID: "2023-0350",
   program: "BS Info Tech",
@@ -12,21 +14,22 @@ const aboutText = {
   paragraph1: "I am a passionate graphic designer, event producer, and aspiring web developer with a keen eye for visual aesthetics and user experience. With a background in multimedia design and event management, I have developed strong skills in creating compelling digital content and managing complex projects.",
   paragraph2: "Currently pursuing my degree in Information Technology, I am eager to expand my technical skills and combine my creative expertise with web development. I am committed to delivering high-quality work and constantly learning new technologies to stay competitive in the industry.",
 };
-import { certificates } from "@/components/Files/CertificatesData";
+
 
 export function ProfileSection() {
   return (
-    <section className="container mx-auto px-20 py-20">
+    <section className="container mx-auto px-4 py-12 md:px-20 md:py-20">
       <div className="grid gap-8 lg:grid-cols-[300px_1fr]">
         {/* Left Column - Profile Image & Student Info */}
         <div className="space-y-6">
           {/* Profile Image */}
           <div className="aspect-square w-full max-w-[280px] mx-auto lg:mx-0 rounded-2xl bg-muted overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 border-2 border-transparent hover:border-primary/20 group cursor-pointer">
             <Image
-              src="/Profilec.png"
+              src="/profilec.webp"
               alt="Harold Catipay"
-              width={1080}
-              height={1080}
+              width={1136}
+              height={941}
+              priority
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-1"
             />
           </div>
@@ -91,6 +94,7 @@ export function ProfileSection() {
                     alt={cert.title}
                     width={700}
                     height={700}
+                    sizes="(min-width: 768px) 20vw, 50vw"
                     className="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -115,6 +119,7 @@ export function ProfileSection() {
                           alt={cert.title}
                           width={400}
                           height={500}
+                          sizes="(min-width: 768px) 20vw, 50vw"
                           className="w-full h-full object-cover"
                         />
                       </div>

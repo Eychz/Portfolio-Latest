@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import Image from "next/image";
+import { ExternalLink } from "lucide-react";
 import recentWorks from "@/components/Files/RecentWorks";
 import { systemProjects, eventProductionProjects, graphicDesignProjects } from "@/components/Files/ProjectData";
 import { notFound } from "next/navigation";
@@ -38,10 +39,14 @@ export default async function ProjectDetailsPage({ params }: { params: Promise<{
       <div className="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-sm border border-border bg-card">
         {project.image && (
           <div className="w-full aspect-[4/3] md:aspect-[21/9] bg-muted relative border-b border-border overflow-hidden flex items-center justify-center p-4 md:p-12">
-            <img
+            <Image
               src={project.image}
               alt={project.title}
-              className="max-h-[60vh] max-w-full object-contain hover:scale-105 transition-transform duration-700 rounded-xl shadow-xl"
+              width={2000}
+              height={2000}
+              sizes="(min-width: 896px) 896px, 100vw"
+              priority
+              className="h-auto w-auto max-h-[60vh] max-w-full object-contain hover:scale-105 transition-transform duration-700 rounded-xl shadow-xl"
             />
           </div>
         )}
@@ -64,6 +69,7 @@ export default async function ProjectDetailsPage({ params }: { params: Promise<{
               <Link
                 href={project.link}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-medium hover:scale-105 transition-transform shadow-lg shadow-primary/20"
               >
                 View Experience <ExternalLink className="h-4 w-4" />

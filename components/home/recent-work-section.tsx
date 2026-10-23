@@ -23,7 +23,7 @@ export function RecentWorkSection() {
       <div className="mb-8">
         <h2 className="text-2xl md:text-3xl font-bold">Recent Work</h2>
         <p className="text-sm text-muted-foreground">
-          A quick look at what I've been building lately.
+          A quick look at what I&apos;ve been building lately.
         </p>
       </div>
 
