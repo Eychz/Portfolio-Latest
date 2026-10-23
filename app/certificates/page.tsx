@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowLeft, Award } from "lucide-react";
+import Image from "next/image";
+import { Award } from "lucide-react";
 import { certificates } from "@/components/Files/CertificatesData";
 import { BackButton } from "@/components/ui/back-button";
 
@@ -20,10 +21,13 @@ export default function CertificatesPage() {
           <Link key={cert.id} href={`/certificates/${cert.slug}`} className="group block">
             <div className="flex flex-col h-full rounded-2xl border bg-card hover:bg-card/80 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <div className="aspect-[4/3] w-full bg-muted flex items-center justify-center p-4 border-b">
-                <img
+                <Image
                   src={cert.image}
                   alt={cert.title}
-                  className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-700 drop-shadow-md"
+                  width={800}
+                  height={600}
+                  sizes="(min-width: 1280px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  className="h-auto w-auto max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-700 drop-shadow-md"
                 />
               </div>
               <div className="p-5 flex-1 flex flex-col justify-between">

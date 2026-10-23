@@ -34,3 +34,8 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local tool output
+*.log
+lint-output.txt
+eslint-result.json

@@ -7,7 +7,7 @@ export function ProjectShowcase() {
         </h1>
         { /* Description */}
         <p className="text-center text-muted-foreground mt-5">
-          Explore the projects I've worked on, from academic projects to personal projects.
+          Explore the projects I&apos;ve worked on, from academic projects to personal projects.
         </p>
       </div>
     </section>

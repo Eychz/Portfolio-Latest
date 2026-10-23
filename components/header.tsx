@@ -34,7 +34,14 @@ export function Header() {
         <nav className="flex items-center gap-1 rounded-lg border border-border p-1">
           {navItems.map((item) => {
             const Icon = item.icon;
-            const isActive = pathname === item.href;
+            const isActive =
+              item.href === "/"
+                ? pathname === "/"
+                : item.href === "/projects"
+                  ? ["/projects", "/system-projects", "/graphic-designs"].some((p) => pathname.startsWith(p))
+                  : item.href === "/about"
+                    ? pathname.startsWith("/about") || pathname.startsWith("/certificates")
+                    : pathname.startsWith(item.href);
             return (
               <Link
                 key={item.href}
@@ -59,7 +66,7 @@ export function Header() {
 
           {/* Hire Me Button */}
           <Button variant="outline" className="gap-2" asChild>
-            <Link href="mailto:eych.xander@gmail.com" target="_blank" rel="noopener noreferrer">
+            <Link href="mailto:eych.xander@gmail.com" aria-label="Contact Me">
               <Mail className="h-4 w-4" />
               <span className="hidden sm:inline">Contact Me</span>
             </Link>

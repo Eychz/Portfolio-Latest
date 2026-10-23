@@ -79,6 +79,9 @@ export function Footer() {
             <div className="flex items-center gap-3">
               <Link
                 href="https://www.tiktok.com/@eych.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
                 className="flex h-8 w-8 items-center justify-center rounded-md border border-border hover:bg-accent transition-colors"
               >
                 <TikTokIcon className="h-4 w-4" />
@@ -86,6 +89,9 @@ export function Footer() {
 
               <Link
                 href="https://www.instagram.com/letter.eych"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
                 className="flex h-8 w-8 items-center justify-center rounded-md border border-border hover:bg-accent transition-colors"
               >
                 <InstagramIcon className="h-4 w-4" />
@@ -93,6 +99,7 @@ export function Footer() {
 
               <Link
                 href="mailto:eych.xander@gmail.com"
+                aria-label="Email"
                 className="flex h-8 w-8 items-center justify-center rounded-md border border-border hover:bg-accent transition-colors"
               >
                 <Mail className="h-4 w-4" />

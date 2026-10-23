@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { ArrowLeft, Award, Image as ImageIcon } from "lucide-react";
+import Image from "next/image";
+import { Award, Image as ImageIcon } from "lucide-react";
 import { certificates } from "@/components/Files/CertificatesData";
 import { notFound } from "next/navigation";
 import { BackButton } from "@/components/ui/back-button";
@@ -18,10 +18,14 @@ export default async function CertificateDetailsPage({ params }: { params: Promi
 
       <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden glass-card border flex flex-col shadow-2xl bg-card">
         <div className="w-full bg-muted/50 relative flex justify-center items-center py-12 px-4 md:p-16 border-b border-border">
-          <img 
-            src={cert.image} 
+          <Image
+            src={cert.image}
             alt={cert.title}
-            className="max-w-full h-auto max-h-[75vh] object-contain rounded-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)] border border-border" 
+            width={2000}
+            height={1500}
+            sizes="(min-width: 1024px) 1024px, 100vw"
+            priority
+            className="w-auto max-w-full h-auto max-h-[75vh] object-contain rounded-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)] border border-border" 
           />
         </div>
         
@@ -29,7 +33,7 @@ export default async function CertificateDetailsPage({ params }: { params: Promi
           <div>
              <div className="flex items-center gap-2 mb-3">
                <Award className="h-5 w-5 text-primary" />
-               <span className="text-sm font-semibold text-primary uppercase tracking-widest">Verified Certificate</span>
+               <span className="text-sm font-semibold text-primary uppercase tracking-widest">Certificate</span>
              </div>
              <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight">{cert.title}</h1>
           </div>

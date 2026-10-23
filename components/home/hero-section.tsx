@@ -4,7 +4,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { useState } from "react";
 
 function GitHubIcon({ className }: { className?: string }) {
   return (
@@ -71,6 +70,9 @@ export function HeroSection() {
             <div className="flex items-center gap-3">
               <Link
                 href="https://github.com/Eychz"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
                 className="flex h-12 w-12 items-center justify-center rounded-md bg-background text-foreground hover:bg-background/80 transition-colors"
               >
                 <GitHubIcon className="h-6 w-6" />
@@ -83,10 +85,11 @@ export function HeroSection() {
           className="rounded-full overflow-hidden w-full max-w-sm md:max-w-md lg:max-w-lg aspect-square block cursor-pointer transition-transform duration-500 hover:scale-[1.02] hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-primary/50"
         >
           <Image
-            src="/Profilec.png"
+            src="/profilec.webp"
             alt="Harold Catipay"
-            width={1080}
-            height={1080}
+            width={1136}
+            height={941}
+            priority
             className="w-full h-full object-cover transition-transform duration-700 ease-in-out hover:scale-105"
           />
         </a>
