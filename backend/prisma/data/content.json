@@ -1,0 +1,675 @@
+{
+  "projects": [
+    {
+      "slug": "municipality-of-cordova-portal",
+      "type": "SYSTEM",
+      "title": "Municipality of Cordova - Portal",
+      "description": "A comprehensive web portal for the Municipality of Cordova, designed to provide seamless access to government services, information, and community resources.",
+      "categories": [
+        "Municipality Portal",
+        "Web Development",
+        "School Projects"
+      ],
+      "image": "/ProjectThumbnail/cordova-portal.webp",
+      "link": "https://municipality-cordova-portal.vercel.app/home",
+      "featured": true,
+      "sortOrder": 0
+    },
+    {
+      "slug": "event-production",
+      "type": "EVENT_PRODUCTION",
+      "title": "Gabi Cordova MLBB Tournament Fiesta League 2025",
+      "description": "Technical Audio Visual service during the Gabi Cordova MLBB Tournament Fiesta League 2025.",
+      "categories": [
+        "Event Production",
+        "Audio Visual"
+      ],
+      "image": "/ProjectThumbnail/gabi-mlbb.webp",
+      "link": "https://www.facebook.com/share/v/18bpKNMvt2/",
+      "featured": true,
+      "sortOrder": 1
+    },
+    {
+      "slug": "cordova-public-college-jersey-for-alcu-2026",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Cordova Public College Jersey for ALCU 2026",
+      "description": "A jersey design for the Cordova Public College for ALCU 2026.",
+      "categories": [
+        "School",
+        "Commission",
+        "Graphic Designs",
+        "Jersey Mockup"
+      ],
+      "image": "/Mockups/alcu-cpc-red-2.webp",
+      "link": null,
+      "featured": true,
+      "sortOrder": 2
+    },
+    {
+      "slug": "air-v1",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Air V1",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/air-v1.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 3
+    },
+    {
+      "slug": "air-v2",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Air V2",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/air-v2.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 4
+    },
+    {
+      "slug": "air-v3",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Air V3",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/air-v3.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 5
+    },
+    {
+      "slug": "calumpang-design",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Calumpang Design",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/calumpang.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 6
+    },
+    {
+      "slug": "caumbay-oray",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Caumbay Oray",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/caumbay-oray.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 7
+    },
+    {
+      "slug": "cogon-fiesta-league",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Cogon Fiesta League",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/cogon-fiesta-league.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 8
+    },
+    {
+      "slug": "cordova-polo-front",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Cordova Polo Front",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/cordova-polo-front.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 9
+    },
+    {
+      "slug": "crencia-family-2",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Crencia Family 2",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/crencia-family-2.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 10
+    },
+    {
+      "slug": "family-fire-run",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Family Fire Run",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/family-fire-run.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 11
+    },
+    {
+      "slug": "family-fire-run-tshirt",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Family Fire Run Tshirt",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/family-fire-run-tshirt.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 12
+    },
+    {
+      "slug": "kobe-front",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Kobe Front",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/kobe-front.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 13
+    },
+    {
+      "slug": "kutsida",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Kutsida",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/kutsida.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 14
+    },
+    {
+      "slug": "lsj-craycaray",
+      "type": "GRAPHIC_DESIGN",
+      "title": "LSJ Craycaray",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/lsj-craycaray.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 15
+    },
+    {
+      "slug": "larrazabal-mockup",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Larrazabal Mockup",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/larrazabal-mockup.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 16
+    },
+    {
+      "slug": "merch-ttp-2",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Merch TTP 2",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/merch-ttp-2.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 17
+    },
+    {
+      "slug": "merch-ttp-3",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Merch TTP 3",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/merch-ttp-3.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 18
+    },
+    {
+      "slug": "merch-ttp",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Merch TTP",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/merch-ttp.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 19
+    },
+    {
+      "slug": "naval-underbone",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Naval Underbone",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/naval-underbone.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 20
+    },
+    {
+      "slug": "naval-mockup",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Naval Mockup",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/naval-mockup.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 21
+    },
+    {
+      "slug": "panamao-jersey-mockup",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Panamao Jersey Mockup",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/panamao-jersey-mockup.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 22
+    },
+    {
+      "slug": "san-jose-v2-mockup",
+      "type": "GRAPHIC_DESIGN",
+      "title": "San Jose V2 Mockup",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/san-jose-v2-mockup.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 23
+    },
+    {
+      "slug": "san-jose-mockup",
+      "type": "GRAPHIC_DESIGN",
+      "title": "San Jose Mockup",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/san-jose-mockup.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 24
+    },
+    {
+      "slug": "sta-fe-mockup",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Sta. Fe Mockup",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/sta-fe-mockup.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 25
+    },
+    {
+      "slug": "san-vicente-ferrer",
+      "type": "GRAPHIC_DESIGN",
+      "title": "San Vicente Ferrer",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/san-vicente-ferrer.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 26
+    },
+    {
+      "slug": "ttp-short-merch-v1",
+      "type": "GRAPHIC_DESIGN",
+      "title": "TTP Short Merch V1",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/ttp-short-merch-v1.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 27
+    },
+    {
+      "slug": "ttp-mesh",
+      "type": "GRAPHIC_DESIGN",
+      "title": "TTP Mesh",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/ttp-mesh1.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 28
+    },
+    {
+      "slug": "toronto-smasher-front",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Toronto Smasher Front",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/toronto-smasher-front.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 29
+    },
+    {
+      "slug": "bakasi-version-21",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Bakasi Version 2.1",
+      "description": null,
+      "categories": [
+        "Esports Jersey"
+      ],
+      "image": "/Mockups/bakasi2-1.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 30
+    },
+    {
+      "slug": "handlers-front",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Handlers Front",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/handlers-front.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 31
+    },
+    {
+      "slug": "young-guns",
+      "type": "GRAPHIC_DESIGN",
+      "title": "Young Guns",
+      "description": null,
+      "categories": [
+        "Sportwear",
+        "Commission"
+      ],
+      "image": "/Mockups/young-guns.webp",
+      "link": null,
+      "featured": false,
+      "sortOrder": 32
+    }
+  ],
+  "certificates": [
+    {
+      "slug": "responsive-web-design",
+      "title": "Responsive Web Design",
+      "image": "/Certificates/responsive-web-design.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 0
+    },
+    {
+      "slug": "creative-web-design",
+      "title": "Creative Web Design",
+      "image": "/Certificates/creative-web-design.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 1
+    },
+    {
+      "slug": "cpc-it-days-2024-committee",
+      "title": "CPC IT Days 2024 Committee",
+      "image": "/Certificates/cpc-it-days-2024-committee.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 2
+    },
+    {
+      "slug": "bsit-days-2026-3rd-year-mlbb-tournament-champion",
+      "title": "BSIT Days 2026 3rd Year - MLBB Tournament Champion",
+      "image": "/Certificates/bsit-days-2026-mlbb-tournament-champion.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 3
+    },
+    {
+      "slug": "bsit-days-2026-3rd-year-mlbb-tournament-finals-mvp",
+      "title": "BSIT Days 2026 3rd Year - MLBB Tournament Finals MVP",
+      "image": "/Certificates/bsit-days-2026-mlbb-tournament-finals-mvp.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 4
+    },
+    {
+      "slug": "understanding-the-self-seminar-as-resource-speaker",
+      "title": "Understanding The Self Seminar as Resource Speaker",
+      "image": "/Certificates/understanding-the-self-seminar-as-resource-speaker.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 5
+    },
+    {
+      "slug": "nstp-civic-welfare-training-program",
+      "title": "NSTP Civic Welfare Training Program",
+      "image": "/Certificates/nstp-civic-welfare-training-program.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 6
+    },
+    {
+      "slug": "grade-12-with-high-honors",
+      "title": "Grade 12 With High Honors",
+      "image": "/Certificates/grade-12-with-high-honors.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 7
+    },
+    {
+      "slug": "grade-12-report-card",
+      "title": "Grade 12 Report Card",
+      "image": "/Certificates/grade-12-report-card.webp",
+      "category": "ACADEMIC_RECORD",
+      "sortOrder": 8
+    },
+    {
+      "slug": "grade-11-report-card",
+      "title": "Grade 11 Report Card",
+      "image": "/Certificates/grade-11-report-card.webp",
+      "category": "ACADEMIC_RECORD",
+      "sortOrder": 9
+    },
+    {
+      "slug": "shs-grade-11-student-permanent-record-1st-sem",
+      "title": "SHS Grade 11 - Student Permanent Record 1st Sem",
+      "image": "/Certificates/shs-g11-student-permanent-record-1st-sem.webp",
+      "category": "ACADEMIC_RECORD",
+      "sortOrder": 10
+    },
+    {
+      "slug": "shs-grade-11-student-permanent-record-2nd-sem",
+      "title": "SHS Grade 11 - Student Permanent Record 2nd Sem",
+      "image": "/Certificates/shs-g11-student-permanent-record-2nd-sem.webp",
+      "category": "ACADEMIC_RECORD",
+      "sortOrder": 11
+    },
+    {
+      "slug": "jhs-grade-10-student-permanent-record",
+      "title": "JHS Grade 10 - Student Permanent Record",
+      "image": "/Certificates/jhs-g10-student-permanent-record.webp",
+      "category": "ACADEMIC_RECORD",
+      "sortOrder": 12
+    },
+    {
+      "slug": "jhs-grade-9-student-permanent-record",
+      "title": "JHS Grade 9 - Student Permanent Record",
+      "image": "/Certificates/jhs-g9-student-permanent-record.webp",
+      "category": "ACADEMIC_RECORD",
+      "sortOrder": 13
+    },
+    {
+      "slug": "jhs-grade-8-student-permanent-record",
+      "title": "JHS Grade 8 - Student Permanent Record",
+      "image": "/Certificates/jhs-g8-student-permanent-record.webp",
+      "category": "ACADEMIC_RECORD",
+      "sortOrder": 14
+    },
+    {
+      "slug": "grade-8-top-8-certificate",
+      "title": "Grade 8 - Top 8 Certificate",
+      "image": "/Certificates/grade-8-top-8-certificate.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 15
+    },
+    {
+      "slug": "jhs-grade-7-student-permanent-record",
+      "title": "JHS Grade 7 - Student Permanent Record",
+      "image": "/Certificates/jhs-g7-student-permanent-record.webp",
+      "category": "ACADEMIC_RECORD",
+      "sortOrder": 16
+    },
+    {
+      "slug": "grade-7-champion-science-quiz-bowl",
+      "title": "Grade 7 - Champion Science Quiz Bowl",
+      "image": "/Certificates/grade-7-champion-science-quiz-bowl.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 17
+    },
+    {
+      "slug": "with-honors-elementary-graduation",
+      "title": "With Honors Elementary Graduation",
+      "image": "/Certificates/with-honors-elementary-graduation.webp",
+      "category": "CERTIFICATE",
+      "sortOrder": 18
+    }
+  ],
+  "education": [
+    {
+      "years": "2023 - Current",
+      "degree": "B.S. in Information Technology",
+      "school": "Cordova Public College"
+    },
+    {
+      "years": "2021 - 2023",
+      "degree": "STEM Strand | Senior High School",
+      "school": "Cordova National High School"
+    },
+    {
+      "years": "2017 - 2021",
+      "degree": "High School",
+      "school": "Cordova National High School"
+    },
+    {
+      "years": "2011 - 2017",
+      "degree": "Elementary",
+      "school": "Buagsong Elementary School"
+    }
+  ],
+  "techStack": [
+    {
+      "name": "React",
+      "level": 71
+    },
+    {
+      "name": "Next JS",
+      "level": 75
+    },
+    {
+      "name": "Express",
+      "level": 74
+    },
+    {
+      "name": "Node",
+      "level": 68
+    },
+    {
+      "name": "Adobe Premiere Pro",
+      "level": 88
+    },
+    {
+      "name": "Adobe Photoshop",
+      "level": 97
+    },
+    {
+      "name": "C#",
+      "level": 60
+    },
+    {
+      "name": "PHP",
+      "level": 65
+    },
+    {
+      "name": "Canva",
+      "level": 96
+    },
+    {
+      "name": "Javascript",
+      "level": 78
+    },
+    {
+      "name": "Capcut",
+      "level": 97
+    },
+    {
+      "name": "Figma",
+      "level": 90
+    }
+  ]
+}

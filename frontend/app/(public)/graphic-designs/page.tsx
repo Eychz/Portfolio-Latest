@@ -1,0 +1,30 @@
+import type { Metadata } from "next"
+import { Layout } from "lucide-react"
+import { BackButton } from "@/components/shared/back-button"
+import { PaginatedProjectGrid } from "@/components/shared/paginated-project-grid"
+import { getProjects } from "@/lib/api"
+import { collectCategories } from "@/utils/project"
+
+export const metadata: Metadata = { title: "Graphic Designs" }
+
+export default async function GraphicDesignsPage() {
+  const projects = await getProjects({ type: "GRAPHIC_DESIGN" })
+
+  return (
+    <div className="container mx-auto px-4 py-12 md:py-20 lg:py-24 animate-in fade-in slide-in-from-bottom-8 duration-700">
+      <BackButton label="Back to Projects" />
+      <div className="flex items-center gap-4 mb-12">
+        <div className="p-3 bg-primary/10 rounded-2xl">
+          <Layout className="h-8 w-8 text-primary" />
+        </div>
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">Graphic Designs Gallery</h1>
+      </div>
+      <PaginatedProjectGrid
+        projects={projects}
+        categories={collectCategories(projects)}
+        itemsPerPage={12}
+        gridClassName="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-max"
+      />
+    </div>
+  )
+}

@@ -1,0 +1,76 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+}
+
+enum ProjectType {
+  SYSTEM
+  GRAPHIC_DESIGN
+  EVENT_PRODUCTION
+}
+
+enum CertificateCategory {
+  CERTIFICATE
+  ACADEMIC_RECORD
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String?
+  passwordHash String
+  role         Role     @default(ADMIN)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Project {
+  id          String      @id @default(cuid())
+  slug        String      @unique
+  type        ProjectType
+  title       String
+  description String?
+  categories  String[]
+  image       String?
+  link        String?
+  featured    Boolean     @default(false)
+  published   Boolean     @default(true)
+  sortOrder   Int         @default(0)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@index([type, published, sortOrder])
+}
+
+model Certificate {
+  id        String              @id @default(cuid())
+  slug      String              @unique
+  title     String
+  image     String
+  category  CertificateCategory @default(CERTIFICATE)
+  published Boolean             @default(true)
+  sortOrder Int                 @default(0)
+  createdAt DateTime            @default(now())
+  updatedAt DateTime            @updatedAt
+
+  @@index([published, sortOrder])
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([read, createdAt])
+}
